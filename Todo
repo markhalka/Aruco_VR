@@ -1,0 +1,17 @@
+Ghaith:
+1. read code
+2. create basic ip camera, send video from computer to some ip address. Language preferably c++
+3. create GUI for user, one for android, one for pc
+3a) the android app should allow the user to log in, and connect the phone to the pc (handle all annoying android permisions etc.).
+3b) for the pc app, the app should allow the user to log in, check connections (connection of phone to pc, and controller to pc), maybe check wifi speed (if its too slow we'll eventually have a wired version), check that all necessary files are there, if not create them and prompt the user (ill explain this later)
+
+Mark:
+1. get rotation to work
+2. create unity app
+3. optomize code (make kalman and imu synchronous)
+
+Both:
+1. decide and buy contorller parts
+1a) should we use raspberry pi, or arduino
+1b) should we use a camera module, or a stand alone ip camera (just google mini wireless security cam)
+1c) decide on final design
