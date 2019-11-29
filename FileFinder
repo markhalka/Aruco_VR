@@ -1,0 +1,34 @@
+using System;
+using System.IO;
+
+namespace FileFinder
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("Hello World!");
+                string partialName = "TeaCup";
+                DirectoryInfo hdDirectoryInWhichToSearch = new DirectoryInfo(@"c:\Users\admin\Pictures\"); //set this to anything. though C dosent work because some folders are protected
+                                                                                                           //including the following
+                string currentDirectory = Directory.GetCurrentDirectory(); //this can help narrow the search and avoid protection exceptions
+                FileInfo[] filesInDir = hdDirectoryInWhichToSearch.GetFiles("*" + partialName + "*.*", System.IO.SearchOption.AllDirectories);
+
+                foreach (FileInfo foundFile in filesInDir)
+                {
+                    string fullName = foundFile.FullName;// foundFile.Exists    the other comand works just as well. it cant have a name if it dosnet exist.
+                    Console.WriteLine(fullName);
+                }
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("probably hit a protected file");
+                Console.WriteLine(e.ToString());
+                Console.ReadLine();
+            }
+        }
+    }
+}
