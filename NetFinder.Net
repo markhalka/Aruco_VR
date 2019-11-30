@@ -1,0 +1,71 @@
+using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+
+namespace NetFinder
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+
+
+            int port = 8600;
+            string sSend = "pie";
+
+
+            //getting local ip. That is, my ip
+            string myip = "";
+            try
+            {
+                IPHostEntry iph;
+                iph = Dns.GetHostEntry(Dns.GetHostName());
+                foreach (IPAddress ip in iph.AddressList)
+                {
+                    if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        myip = ip.ToString();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+                Console.ReadLine();
+            }
+
+
+
+            byte[] data = new byte[1024];
+            string sip = myip;
+            Console.WriteLine(sip.IndexOf("."));
+            int j = 0;
+            if (sip[sip.Length - 3] == '.')//this is all thats nessessary
+            {
+                j = 2;
+            }
+            else if(sip[sip.Length - 2] == '.')
+            {
+                j = 1;
+            }
+            for (int i = 0; i < 256; i++)
+            {
+                sip=sip.Remove(myip.Length - j);
+                sip = sip + i.ToString();//"D2"
+                Console.WriteLine(sip);
+                UdpClient server = new UdpClient(sip, port); //c# has a unique class for this...
+                IPEndPoint sender = new IPEndPoint(IPAddress.Any, port);
+                data = Encoding.ASCII.GetBytes(sSend);
+                server.Send(data, data.Length);
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
+//Console.WriteLine("Received a broadcast from {0}", groupEP.ToString()); this gets the other's ip. implementation can be found in UDPDownA
+/*
+
+            */
