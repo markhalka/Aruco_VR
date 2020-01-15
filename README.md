@@ -1,4 +1,4 @@
-VR1 is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers. For more information, please visit our website: //add website
+DiveVR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers. For more information, please visit our website: //add website
 
 In order to use the software, you must download the app found in the website above; however, it is possible to build the project from the repository. 
 
