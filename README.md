@@ -1,8 +1,8 @@
-DiveVR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers. For more information, please visit our website: //add website
+DiveVR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers. For more information, please visit our website: https://markhalka2001.wixsite.com/dive
 
 In order to use the software, you must download the app found in the website above; however, it is possible to build the project from the repository. 
 
-In order to use the code you must have OpenCV downloaded, with a verion above 3. //check this they might not need it
+In order to use the code you must have OpenCV downloaded, with a verion above 3.
 
 Currently the software only works on Windows and Android, however, future implementations with ios and iPhone will be available soon.
 
