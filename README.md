@@ -1,4 +1,4 @@
-DiveVR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers. For more information, please visit our website: https://markhalka2001.wixsite.com/dive
+DiveVR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers. For more information, please visit our website: www.diveVR.org
 
 In order to use the software, you must download the app found in the website above; however, it is possible to build the project from the repository. 
 
