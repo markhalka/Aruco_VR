@@ -1,4 +1,4 @@
-DiveVR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers. For more information, please visit our website: www.diveVR.org
+DiveVR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers.
 
 In order to use the software, you must download the app found in the website above; however, it is possible to build the project from the repository. 
 
@@ -15,3 +15,6 @@ There are included instructions in the downloadable app; however, a general over
 4. Next, the user will be asked to initialize the camera of the phone if it has not yet been done. If not, they will need to point the camera at multiple angles at the designated calibration board.
 5. Once these are complete, the user can place the phone in the headset, and begin playing their chosen game.
 
+The software has built-in functionality to allow users to play any game in VR, regardless of whether or not it is compatible with VR. This is done using Windows OS software features, which are used to match the actions of user in the real world, to keystrokes and mouse movments that match the real-world movments to ones in the game.
+
+For more information about the project, feel free to contact me at mark.halka2001@gmail.com. 
