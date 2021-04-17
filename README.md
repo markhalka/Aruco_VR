@@ -16,9 +16,10 @@ the users movments are converted to keystrokes and mouse movents to any game, al
 <h2> Instructions: </h2>
 1. First place ARUCO markers around the room, such that they are not too far from each other (a size of about 10cm x 10cm per marker works well)
 2. Next, open the app on your computer, and on your phone, the apps on both will connect automatically.
-(Note: steps 3 and 4 only apply if it is your first time using the system)
 3. Then if it is your first time, you must initialize your room (otherwise you can use the preexisting configruation). 
 4. Next, initialize the camera of the phone if it has not been done before. This is done by pointing the phone camera at a designated calibration board. (included in the rep)
 5. Finally, you can place your phone in the headset and begin playing your chosen game.
+
+(Note: steps 3 and 4 only apply if it is your first time using the system)
 
 For more information about the project, feel free to contact me at mark.halka2001@gmail.com. 
