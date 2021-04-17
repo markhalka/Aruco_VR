@@ -1,4 +1,4 @@
-DiveVR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers.
+Aruco_VR is a virtual reality system that aims at making virutal reality more accessable, by using everyday electronics, a cheap controller and aruco markers.
 
 <b>The software also has built-in functionality to allow users to play any game in VR, regardless of whether or not it is compatible with VR. This is done using Windows OS software features, which are used to match the actions of user in the real world, to keystrokes and mouse movments that match the real-world movments to ones in the game.</b>
 
